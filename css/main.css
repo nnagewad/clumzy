@@ -159,8 +159,7 @@ hr {
 
 @media only screen and (max-width: 1024px) {
   .hero {
-    background-image: url(../img/clumzy-hero-desktop.jpg);
-    background-size: 55%;
+    background-size: 65%;
   }
 }
 
@@ -218,8 +217,8 @@ input[type="email"]:valid ~ .icon.is-right svg {
   border-width: 2px;
 }
 
-.footer.has-background-primary {
-  background-color: var(--secondary) !important;
+.footer.has-background-black {
+  background-color: var(--primary) !important;
   padding-bottom: 2rem;
 }
 
