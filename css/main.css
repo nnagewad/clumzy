@@ -120,15 +120,6 @@ body {
   background-position: left bottom;
 }
 
-@media all and (-webkit-min-device-pixel-ratio : 1.5),
-       all and (-o-min-device-pixel-ratio: 3/2),
-       all and (min--moz-device-pixel-ratio: 1.5),
-       all and (min-device-pixel-ratio: 1.5) {
-  .hero {
-    background-image: url(../img/clumzy-hero@2x.jpg);
-  }
-}
-
 .hero.is-medium .hero-body {
   padding-top: 3rem;
 }
@@ -157,34 +148,22 @@ hr {
   background-color: white;
 }
 
-@media only screen and (max-width: 1024px) {
-  .hero {
-    background-size: 65%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero {
-    background-image: none;
-  }
-  .hero.is-medium .hero-body {
-    padding-bottom: 0;
-  }
-  .navbar-item img {
-    max-height: 5rem;
-  }
-}
-
 .column.is-one-third.is-narrow img {
   margin: 0 auto 1rem;
 }
 
-.section.video {
-  background: white;
+.video.has-background-black {
+  background-color: var(--primary) !important;
 }
 
 .contact {
   background-color: white;
+}
+
+.contact h2 {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column > small {
@@ -252,6 +231,41 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
 .has-text-black {
   color: var(--primary) !important;
+}
+
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+       all and (-o-min-device-pixel-ratio: 3/2),
+       all and (min--moz-device-pixel-ratio: 1.5),
+       all and (min-device-pixel-ratio: 1.5) {
+  .hero {
+    background-image: url(../img/clumzy-hero@2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    background-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+  .hero.is-medium .hero-body {
+    padding-bottom: 0;
+  }
+  .navbar-item img {
+    max-height: 5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  .form-submit-message .button {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
