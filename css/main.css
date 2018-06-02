@@ -104,6 +104,7 @@ textarea {
 
 html {
   background-color: #fafafb;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body {
@@ -161,7 +162,7 @@ hr {
 }
 
 .contact h2 {
-  max-width: 350px;
+  max-width: 365px;
   margin-left: auto;
   margin-right: auto;
 }
