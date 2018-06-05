@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --primary: #000000;
+  --primary: #0A0A0A;
   --secondary: #0B24FB;
   --accent: #FF0099;
 }
@@ -153,10 +153,6 @@ hr {
   margin: 0 auto 1rem;
 }
 
-.video.has-background-black {
-  background-color: var(--primary) !important;
-}
-
 .contact {
   background-color: white;
 }
@@ -198,7 +194,6 @@ input[type="email"]:valid ~ .icon.is-right svg {
 }
 
 .footer.has-background-black {
-  background-color: var(--primary) !important;
   padding-bottom: 2rem;
 }
 
@@ -228,10 +223,6 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
 .columns.is-mobile.is-centered a:hover svg {
   fill: var(--accent);
-}
-
-.has-text-black {
-  color: var(--primary) !important;
 }
 
 @media all and (-webkit-min-device-pixel-ratio : 1.5),
