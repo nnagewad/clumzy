@@ -125,6 +125,10 @@ body {
   padding-top: 3rem;
 }
 
+.title.is-size-2 {
+  word-break: inherit;
+}
+
 .navbar-item img {
     max-height: 7.5rem;
 }
