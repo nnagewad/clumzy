@@ -267,6 +267,13 @@ input[type="email"]:valid ~ .icon.is-right svg {
   }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1087px) {
+  .navbar-brand.navbar-item {
+    padding-left: 1.5rem;
+  }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
