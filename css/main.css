@@ -111,6 +111,7 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "museo-sans",sans-serif;
 }
 
 .hero.is-medium .hero-body {
@@ -193,28 +194,8 @@ input[type="email"]:valid ~ .icon.is-right svg {
   border-width: 2px;
 }
 
-.footer.has-background-black {
-  padding-bottom: 2rem;
-}
-
-.columns.content > .column:first-child {
-  order: 2;
-}
-
-.columns.content > .column:last-child svg {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.columns.content > .column:last-child a {
-  order: 1;
-  color: white;
-  text-decoration: underline;
-}
-
-.columns.content > .column:last-child a:hover {
-  color: var(--accent);
-  text-decoration: none;
+.footer {
+  padding-bottom: 3rem;
 }
 
 .columns.is-mobile.is-centered svg {
@@ -223,6 +204,25 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
 .columns.is-mobile.is-centered a:hover svg {
   fill: var(--accent);
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+p.is-inline-block {
+  margin-left: .5rem;
+}
+
+.columns:not(:last-child),
+.has-text-centered.footer-content {
+  margin-bottom: calc(2rem - .75rem) !important;
 }
 
 @media only screen and (max-width: 768px) {
