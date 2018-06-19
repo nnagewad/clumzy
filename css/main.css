@@ -122,7 +122,21 @@ body {
   word-break: inherit;
 }
 
-.navbar-brand.navbar-item {
+.hero.is-dark a.navbar-item:hover {
+  background-color: transparent;
+}
+
+.hero.is-dark a.navbar-item svg {
+  fill: #FFFFFF;
+  max-height: 5rem;
+}
+
+.hero.is-dark a.navbar-item:hover svg {
+  fill: var(--accent);
+}
+
+.navbar-brand.navbar-item,
+a.navbar-item {
   padding-top: 2rem;
 }
 
@@ -206,11 +220,20 @@ input[type="email"]:valid ~ .icon.is-right svg {
   fill: var(--accent);
 }
 
+.content a,
 .footer a {
-  color: white;
   text-decoration: underline;
 }
 
+.footer .content a {
+  color: white;
+}
+
+.content a {
+  color: var(--primary);
+}
+
+.content a:hover,
 .footer a:hover {
   color: var(--accent);
   text-decoration: none;
@@ -268,7 +291,8 @@ p.is-inline-block {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1087px) {
-  .navbar-brand.navbar-item {
+  .navbar-brand.navbar-item,
+  a.navbar-item {
     padding-left: 1.5rem;
   }
 }
